@@ -1,0 +1,24 @@
+#ifndef COLOURS
+#define COLOURS
+
+#include <SDL.h>
+
+
+const SDL_Colour 
+	RED = {0xFF, 0, 0, 0xFF},
+	GREEN = {0, 0xFF, 0, 0xFF},
+	BLUE = {0, 0, 0xFF, 0xFF},
+	BLACK = {0, 0, 0, 0xFF},
+	WHITE = {0xFF, 0xFF, 0xFF, 0xFF},
+	YELLOW = {0xFF, 0xFF, 0, 0xFF},
+	BROWN = {0x8B, 0x45, 0x13, 0xFF},
+	PINK = {0xFF, 0x69, 0xB4, 0xFF},
+	//MAGENTA = {0xFF, 0, 0xFF, 0xFF};
+	ORANGE = {0xFF, 0xA5, 0, 0xFF};
+
+bool operator==(const SDL_Colour & f, const SDL_Colour & s);
+
+bool operator!=(const SDL_Colour & f, const SDL_Colour & s);
+
+
+#endif
